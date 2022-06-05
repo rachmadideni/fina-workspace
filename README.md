@@ -110,3 +110,19 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 
 ### (optional for vscode user) using the recomended extension
 navigate to extension sidebar and search by extension identifier
+
+### commit initial project
+
+### create dev branch
+``` git checkout -b dev ```
+
+### setting nx-cloud (optional)
+switch to bash on the current workspace folder run this
+``` NX_BRANCH=testing npx nx run myapp:build ```
+
+### running your next app development 
+
+``` nx serve my-new-app ```
+
+### running your next app production
+``` nx serve my-new-app --prod ```
