@@ -92,3 +92,21 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
+
+
+## own setup
+
+### create typescript workspace
+``` npx create-nx-workspace --preset=ts ```
+
+### install dependency
+``` npm install --save-dev @nrwl/next ```
+
+### create your next app
+``` nx g @nrwl/next:app my-new-app ```
+
+### install MUI
+``` npm install @mui/material @emotion/react @emotion/styled ```
+
+### (optional for vscode user) using the recomended extension
+navigate to extension sidebar and search by extension identifier
