@@ -94,35 +94,23 @@ Teams using Nx gain the advantage of building full-stack applications with their
 Visit [Nx Cloud](https://nx.app/) to learn more.
 
 
-## own setup
-
-### create typescript workspace
-``` npx create-nx-workspace --preset=ts ```
+## (WIP) Project Setup
 
 ### install dependency
-``` npm install --save-dev @nrwl/next ```
-
-### create your next app
-``` nx g @nrwl/next:app my-new-app ```
-
-### install MUI
-``` npm install @mui/material @emotion/react @emotion/styled ```
+``` npm install or yarn install ```
 
 ### (optional for vscode user) using the recomended extension
 navigate to extension sidebar and search by extension identifier
 
-### commit initial project
-
-### create dev branch
-``` git checkout -b dev ```
-
 ### setting nx-cloud (optional)
 switch to bash on the current workspace folder run this
-``` NX_BRANCH=testing npx nx run myapp:build ```
+``` NX_BRANCH=testing npx nx run finance-app:build ```
 
-### running your next app development 
+### running your next app (development) 
 
-``` nx serve my-new-app ```
+``` nx serve finance-app ```
 
-### running your next app production
-``` nx serve my-new-app --prod ```
+### running your next app (production)
+``` nx serve finance-app --prod ```
+
+### open http://localhost:4200 in your favorit browser (chrome, etc) 
