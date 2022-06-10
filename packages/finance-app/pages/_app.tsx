@@ -1,17 +1,29 @@
 import { AppProps } from 'next/app';
-import Head from 'next/head';
-import './styles.css';
+import { Provider } from 'react-redux'
+import { CacheProvider, EmotionCache } from '@emotion/react';
+import { ThemeProvider } from '@mui/material/styles'
+import { CssBaseline } from '@mui/material'
+import createEmotionCache from '../utils/createEmotionCache';
+import theme from '../theme';
+import store from '../store'
+import '../styles/global.css'
 
-function CustomApp({ Component, pageProps }: AppProps) {
+interface ICustomApp extends AppProps {
+  emotionCache?: EmotionCache
+}
+
+const clientSideEmotionCache = createEmotionCache();
+
+function CustomApp({ Component, emotionCache=clientSideEmotionCache, pageProps }: ICustomApp) {
   return (
-    <>
-      <Head>
-        <title>Welcome to finance-app!</title>
-      </Head>
-      <main className="app">
-        <Component {...pageProps} />
-      </main>
-    </>
+    <CacheProvider value={emotionCache}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Provider store={store}>
+          <Component {...pageProps} />
+        </Provider>
+      </ThemeProvider>
+    </CacheProvider>
   );
 }
 
