@@ -17,11 +17,14 @@
     "@nrwl/react": "14.1.9",
     "@nrwl/web": "14.1.9",
     "@nrwl/workspace": "14.1.9",
+    "@redux-devtools/core": "^3.13.1",
+    "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "13.1.1",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.7",
     "@types/react": "18.0.8",
     "@types/react-dom": "18.0.3",
+    "@types/react-redux": "^7.1.24",
     "@typescript-eslint/eslint-plugin": "~5.18.0",
     "@typescript-eslint/parser": "~5.18.0",
     "babel-jest": "27.5.1",
@@ -48,11 +51,16 @@
     "@emotion/styled": "^11.8.1",
     "@mui/material": "^5.8.2",
     "@nrwl/next": "14.1.9",
+    "@reduxjs/toolkit": "^1.8.2",
+    "axios": "^0.27.2",
     "core-js": "^3.6.5",
+    "formik": "^2.2.9",
     "next": "12.1.5",
     "react": "18.1.0",
     "react-dom": "18.1.0",
+    "react-redux": "^8.0.2",
     "regenerator-runtime": "0.13.7",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "yup": "^0.32.11"
   }
 }
